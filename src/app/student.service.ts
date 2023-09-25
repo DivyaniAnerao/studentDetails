@@ -11,7 +11,7 @@ export class StudentService {
   }
   title = 'detailsPortal';
   getStudents(){
-    return this.http.get(environment.apiUrl+'students')
+    return this.http.get(environment.apiUrl+'/students')
   }
 
   getStudentDetails(studentId:number = 0,newDate:any = 0){
